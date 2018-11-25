@@ -1,0 +1,19 @@
+doctype html
+html
+	head
+		title #{title}
+		link(rel='stylesheet', href='/css/style.css')
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+
+	body
+		h1 #{title}
+		h2 #{date} at #{loc}
+		p #{desc}
+		div
+			p Are you coming?
+			div
+			a(href=`/analytics?id=y`) Yes
+			div
+			a(href=`/analytics?id=m`) Maybe
+			div
+			a(href=`/analytics?id=n`) No
